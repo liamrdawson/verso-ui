@@ -1,0 +1,51 @@
+{
+  "name": "components",
+  "version": "1.0.0",
+  "description": "A component library based on the principles of atomic design.",
+  "main": "index.js",
+  "dependencies": {
+    "babel-loader": "^8.2.2",
+    "babel-plugin-react-require": "^3.1.3",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^7.19.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-import-resolver-typescript": "^2.3.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.2.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "typescript": "^4.1.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@storybook/addon-actions": "^6.1.15",
+    "@storybook/addon-essentials": "^6.1.15",
+    "@storybook/addon-links": "^6.1.15",
+    "@storybook/react": "^6.1.15"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liamrdawson/components.git"
+  },
+  "keywords": [
+    "components",
+    "library",
+    "ui"
+  ],
+  "author": "Liam R. Dawson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liamrdawson/components/issues"
+  },
+  "homepage": "https://github.com/liamrdawson/components#readme"
+}
