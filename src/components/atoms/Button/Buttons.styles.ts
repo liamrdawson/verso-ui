@@ -1,5 +1,5 @@
 import { css } from '@emotion/react'
-import { ITheme, typeScale, SPACING } from 'src/themes'
+import { ITheme, typeScale, SPACING, defaultTheme } from 'src/themes'
 
 export const base = css({
   boxSizing: 'border-box',
@@ -13,7 +13,7 @@ export const base = css({
   transition: 'background-color 0.2s linear, color 0.2s linear'
 })
 
-export const primary = (theme: ITheme, isDisabled: boolean) =>
+export const primary = (theme: ITheme = defaultTheme, isDisabled: boolean) =>
   css(
     {
       textTransform: 'uppercase',
@@ -34,7 +34,7 @@ export const primary = (theme: ITheme, isDisabled: boolean) =>
     base
   )
 
-export const secondary = (theme: ITheme) =>
+export const secondary = (theme: ITheme = defaultTheme) =>
   css(
     {
       backgroundColor: theme.colour.secondary,
@@ -58,7 +58,7 @@ export const secondary = (theme: ITheme) =>
     base
   )
 
-export const tertiary = (theme: ITheme) =>
+export const tertiary = (theme: ITheme = defaultTheme) =>
   css(
     {
       backgroundColor: theme.colour.secondary,

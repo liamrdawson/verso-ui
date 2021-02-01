@@ -1,6 +1,6 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { jsx, useTheme } from '@emotion/react'
+import { jsx } from '@emotion/react'
 import Link from 'next/link'
 import { Text } from 'src/components/atoms'
 import { ITheme, defaultTheme } from 'src/themes'
@@ -21,7 +21,7 @@ export const Nav = (props: NavProps) => {
   const theme: ITheme = defaultTheme
   return (
     <nav css={baseNav}>
-      <ul css={baseUl(defaultTheme)}>
+      <ul css={baseUl(theme)}>
         {pages.map((page: PageObject) => (
           <li key={pages.indexOf(page)}>
             <Link css={baseLink} href={page.pathName}>
