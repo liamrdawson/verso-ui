@@ -4,7 +4,8 @@ import {
   typeScale,
   ITypeScale,
   typeWeight,
-  ITypeWeight
+  ITypeWeight,
+  defaultTheme
 } from 'src/theme'
 
 /**
@@ -12,7 +13,7 @@ import {
  *      An excellent workaround for this that was introduced in TypeScript 2.1 is keyof. This allows you to explicitly type something as a key of a certain class/interface.
  */
 
-export const textStyles = (theme: ITheme) => (
+export const textStyles = (theme: ITheme = defaultTheme) => (
   weight: keyof ITypeWeight = 'light',
   size: keyof ITypeScale = 'normal'
 ) =>

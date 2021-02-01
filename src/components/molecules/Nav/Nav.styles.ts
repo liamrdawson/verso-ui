@@ -1,5 +1,5 @@
 import { css } from '@emotion/react'
-import { SPACING, LAYOUT, ITheme } from 'src/theme'
+import { SPACING, LAYOUT, ITheme, defaultTheme } from 'src/theme'
 
 export const baseNav = () =>
   css({
@@ -7,7 +7,7 @@ export const baseNav = () =>
     height: '100%'
   })
 
-export const baseUl = (theme: ITheme) =>
+export const baseUl = (theme: ITheme = defaultTheme) =>
   css({
     listStyle: 'none',
     padding: 0,
@@ -40,7 +40,7 @@ export const baseLink = () =>
     cursor: 'pointer'
   })
 
-export const dynamicStyle = (theme: ITheme) =>
+export const dynamicStyle = (theme: ITheme = defaultTheme) =>
   css({
     color: theme.colour.tertiary
   })

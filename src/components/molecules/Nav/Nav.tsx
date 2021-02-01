@@ -3,7 +3,7 @@
 import { jsx, useTheme } from '@emotion/react'
 import Link from 'next/link'
 import { Text } from 'src/components/atoms'
-import { ITheme } from 'src/theme'
+import { ITheme, defaultTheme } from 'src/theme'
 import { baseNav, baseUl, baseLink, dynamicStyle } from './Nav.styles'
 
 export interface NavProps {
@@ -17,16 +17,17 @@ export interface PageObject {
 
 export const Nav = (props: NavProps) => {
   const { pages } = props
-  const theme: ITheme = useTheme()
+  // const theme: ITheme = useTheme()
+  const theme: ITheme = defaultTheme
   return (
     <nav css={baseNav}>
-      <ul css={baseUl}>
+      <ul css={baseUl(defaultTheme)}>
         {pages.map((page: PageObject) => (
           <li key={pages.indexOf(page)}>
             <Link css={baseLink} href={page.pathName}>
               <span css={baseLink}>
                 <Text
-                  additionalStyles={dynamicStyle(theme)}
+                  additionalStyles={dynamicStyle(defaultTheme)}
                   element="a"
                   fontWeight="light"
                   fontSize="medium"

@@ -2,7 +2,7 @@
 /** @jsx jsx */
 import { jsx, SerializedStyles, useTheme } from '@emotion/react'
 import { ElementType } from 'react'
-import { ITypeWeight, ITypeScale, ITheme } from 'src/theme'
+import { ITypeWeight, ITypeScale, ITheme, defaultTheme } from 'src/theme'
 import { textStyles } from './Text.styles'
 
 export type TextProps = {
@@ -22,7 +22,8 @@ export const Text = ({
   additionalStyles,
   children
 }: TextProps) => {
-  const theme: ITheme = useTheme()
+  // const theme: ITheme = useTheme()
+  const theme: ITheme = defaultTheme
   const base = textStyles(theme)(fontWeight, fontSize)
   const Comp: ElementType = element
   const styles = [css, base, additionalStyles]
