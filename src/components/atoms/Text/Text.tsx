@@ -1,8 +1,8 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { jsx, SerializedStyles, useTheme } from '@emotion/react'
+import { jsx, SerializedStyles } from '@emotion/react'
 import { ElementType } from 'react'
-import { ITypeWeight, ITypeScale, ITheme, defaultTheme } from 'src/theme'
+import { ITypeWeight, ITypeScale, ITheme, defaultTheme } from 'src/themes'
 import { textStyles } from './Text.styles'
 
 export type TextProps = {

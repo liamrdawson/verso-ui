@@ -1,32 +1,6 @@
 import { BLACK, NEUTRAL, RED, BLUE } from './colours'
-import { primaryFont } from './typography'
-
-export interface ITheme {
-  readonly colour: {
-    primary: string
-    primaryHover: string
-    primaryActive: string
-    textOnPrimary: string
-
-    disabled: string
-
-    secondary: string
-    secondaryHover: string
-    secondaryActive: string
-
-    tertiary: string
-    tertiaryHover: string
-    tertiaryActive: string
-
-    accent: string
-
-    text: string
-    textInverted: string
-
-    formBackground: string
-  }
-  primaryFont: string
-}
+import { primaryFont, typeScale, typeWeight } from './typography'
+import { ITheme } from '../themeTypes'
 
 export const defaultTheme: ITheme = {
   colour: {
@@ -52,7 +26,11 @@ export const defaultTheme: ITheme = {
 
     formBackground: NEUTRAL[200]
   },
-  primaryFont
+  typography: {
+    primaryFont,
+    typeScale,
+    typeWeight
+  }
 }
 
 export const darkTheme: ITheme = {
@@ -79,5 +57,9 @@ export const darkTheme: ITheme = {
 
     formBackground: NEUTRAL[200]
   },
-  primaryFont
+  typography: {
+    primaryFont,
+    typeScale,
+    typeWeight
+  }
 }

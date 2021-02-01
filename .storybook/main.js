@@ -1,4 +1,7 @@
 const path = require('path')
+
+// TODO: ensure that this file is well documented, so that the purposes of these rules are clear.
+
 module.exports = {
   stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
   addons: ['@storybook/addon-links', '@storybook/addon-essentials'],

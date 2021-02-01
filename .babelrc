@@ -1,3 +1,4 @@
+// TODO: ensure that this file is well documented, so that the purposes of these rules are clear.
 {
   "presets": [
     "@babel/preset-env",

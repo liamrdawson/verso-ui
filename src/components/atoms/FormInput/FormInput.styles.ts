@@ -1,16 +1,22 @@
 import { css } from '@emotion/react'
-import { typeScale, typeWeight, SPACING, ITheme } from 'src/theme'
+import {
+  typeScale,
+  typeWeight,
+  SPACING,
+  ITheme,
+  defaultTheme
+} from 'src/themes'
 
-export const labelAndForm = (theme: ITheme) =>
+export const labelAndForm = (theme: ITheme = defaultTheme) =>
   css({
     display: 'flex',
     flexDirection: 'column',
-    fontFamily: theme.primaryFont
+    fontFamily: theme.typography.primaryFont
   })
 
-export const input = (theme: ITheme) =>
+export const input = (theme: ITheme = defaultTheme) =>
   css({
-    fontFamily: theme.primaryFont,
+    fontFamily: theme.typography.primaryFont,
     boxSizing: 'border-box',
     borderRadius: 2,
     borderWidth: SPACING[1],

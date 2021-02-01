@@ -1,7 +1,7 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { ITheme } from 'src/theme'
-import { jsx, SerializedStyles, useTheme } from '@emotion/react'
+import { ITheme, defaultTheme } from 'src/themes'
+import { jsx, SerializedStyles } from '@emotion/react'
 import { labelAndForm, labelStyle, input } from './FormInput.styles'
 
 export type FormTypes = {
@@ -11,27 +11,27 @@ export type FormTypes = {
 }
 
 export const TextInput = ({ label, type, additionalStyles }: FormTypes) => {
-  const theme: ITheme = useTheme()
+  const theme: ITheme = defaultTheme
   const styling = [additionalStyles, labelAndForm(theme)]
   return (
     <div css={styling}>
       <label css={labelStyle} htmlFor={label}>
         {label}
       </label>
-      <input css={input} type={type} id={label} name={label} />
+      <input css={input(defaultTheme)} type={type} id={label} name={label} />
     </div>
   )
 }
 
 export const TextArea = ({ label, additionalStyles }: FormTypes) => {
-  const theme: ITheme = useTheme()
+  const theme: ITheme = defaultTheme
   const styling = [additionalStyles, labelAndForm(theme)]
   return (
     <div css={styling}>
       <label css={labelStyle} htmlFor={label}>
         {label}
       </label>
-      <textarea css={input} id={label} name={label} />
+      <textarea css={input(defaultTheme)} id={label} name={label} />
     </div>
   )
 }

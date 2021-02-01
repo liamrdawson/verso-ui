@@ -3,7 +3,7 @@
 import { jsx, useTheme } from '@emotion/react'
 import Link from 'next/link'
 import { Text } from 'src/components/atoms'
-import { ITheme, defaultTheme } from 'src/theme'
+import { ITheme, defaultTheme } from 'src/themes'
 import { baseNav, baseUl, baseLink, dynamicStyle } from './Nav.styles'
 
 export interface NavProps {

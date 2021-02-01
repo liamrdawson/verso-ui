@@ -1,10 +1,9 @@
 import { css } from '@emotion/react'
-import { defaultTheme, ITheme } from 'src/theme'
-import { typeScale } from 'src/theme'
+import { typeScale, defaultTheme, ITheme } from 'src/themes'
 
 export const base = (theme: ITheme = defaultTheme) =>
   css({
-    fontFamily: theme.primaryFont,
+    fontFamily: theme.typography.primaryFont,
     color: theme.colour.primary
   })
 
