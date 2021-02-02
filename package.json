@@ -2,7 +2,11 @@
   "name": "components",
   "version": "1.0.0",
   "description": "A component library based on the principles of atomic design.",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "types": "./dist/types.d.ts",
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/liamrdawson/components.git"
@@ -44,7 +48,9 @@
     "next": "^10.0.6",
     "prettier": "^2.2.1",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "webpack": "^5.20.0",
+    "webpack-cli": "^4.5.0"
   },
   "peerDependencies": {
     "next": "^10.0.6",
