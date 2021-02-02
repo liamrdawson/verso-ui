@@ -1,5 +1,6 @@
 const path = require('path')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin')
 
 const config = {
   target: 'web',
@@ -29,7 +30,7 @@ const config = {
   module: {
     rules: [
       {
-        test: /\.ts(x?)$/,
+        test: /\.(js|jsx|ts|tsx)$/,
         exclude: [/node_modules/, /test/],
         use: [
           {
@@ -43,7 +44,8 @@ const config = {
     ]
   },
   resolve: {
-    extensions: ['.tsx', '.ts', '.js']
+    plugins: [new TsconfigPathsPlugin()],
+    extensions: ['.tsx', '.ts', 'jsx', '.js']
   }
 }
 
