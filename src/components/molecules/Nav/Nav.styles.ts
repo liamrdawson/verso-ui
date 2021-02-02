@@ -1,5 +1,5 @@
 import { css } from '@emotion/react'
-import { SPACING, LAYOUT, ITheme, defaultTheme } from 'src/themes'
+import { SPACING, LAYOUT, ITheme, defaultTheme } from '@aperture-ui/theme'
 
 export const baseNav = () =>
   css({

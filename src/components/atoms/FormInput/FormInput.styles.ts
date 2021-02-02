@@ -5,7 +5,7 @@ import {
   SPACING,
   ITheme,
   defaultTheme
-} from 'src/themes'
+} from '@aperture-ui/theme'
 
 export const labelAndForm = (theme: ITheme = defaultTheme) =>
   css({

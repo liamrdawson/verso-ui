@@ -1,6 +1,6 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { ITheme, defaultTheme } from 'src/themes'
+import { ITheme, defaultTheme } from '@aperture-ui/theme'
 import { jsx, SerializedStyles } from '@emotion/react'
 import { labelAndForm, labelStyle, input } from './FormInput.styles'
 

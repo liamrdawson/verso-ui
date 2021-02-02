@@ -1,5 +1,5 @@
 import { css } from '@emotion/react'
-import { typeScale, defaultTheme, ITheme } from 'src/themes'
+import { typeScale, defaultTheme, ITheme } from '@aperture-ui/theme'
 
 export const base = (theme: ITheme = defaultTheme) =>
   css({

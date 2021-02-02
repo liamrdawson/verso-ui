@@ -5,14 +5,17 @@ const path = require('path')
 module.exports = {
   stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
   addons: ['@storybook/addon-links', '@storybook/addon-essentials'],
-  webpackFinal: async (config, { configType }) => {
+  webpackFinal: async (config) => {
     config.resolve.modules = [path.resolve(__dirname, '..'), 'node_modules']
 
     config.resolve.alias = {
       ...config.resolve.alias,
-      '@/Components': path.resolve(__dirname, '../src/components')
+      '@aperture-ui/components': path.resolve(__dirname, '../src/components'),
+      '@aperture-ui/theme': path.resolve(__dirname, '../src/themes')
     }
 
-    return { ...config }
+    config.resolve.extensions.push('.ts', '.tsx')
+
+    return config
   }
 }

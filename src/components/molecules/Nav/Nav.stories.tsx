@@ -1,7 +1,7 @@
 import React from 'react'
 import { Meta, Story } from '@storybook/react/types-6-0'
 
-import { Nav, NavProps } from './index'
+import { Nav, NavProps } from './Nav'
 
 export default {
   title: 'Components/Molecules/Nav',

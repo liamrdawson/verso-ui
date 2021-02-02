@@ -1,5 +1,10 @@
 import { css } from '@emotion/react'
-import { ITheme, ITypeScale, ITypeWeight, defaultTheme } from 'src/themes'
+import {
+  ITheme,
+  ITypeScale,
+  ITypeWeight,
+  defaultTheme
+} from '@aperture-ui/theme'
 
 /**
  * TIP: Using a generic string as an index, TypeScript will complain that it can't guarantee that whatever string is passed into your function will actually match a property name on your interface.

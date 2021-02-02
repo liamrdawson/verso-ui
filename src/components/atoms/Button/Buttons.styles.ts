@@ -1,5 +1,5 @@
 import { css } from '@emotion/react'
-import { ITheme, typeScale, SPACING, defaultTheme } from 'src/themes'
+import { ITheme, typeScale, SPACING, defaultTheme } from '@aperture-ui/theme'
 
 export const base = css({
   boxSizing: 'border-box',

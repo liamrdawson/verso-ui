@@ -2,8 +2,8 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/react'
 import Link from 'next/link'
-import { Text } from 'src/components/atoms'
-import { ITheme, defaultTheme } from 'src/themes'
+import { Text } from '@aperture-ui/components'
+import { ITheme, defaultTheme } from '@aperture-ui/theme'
 import { baseNav, baseUl, baseLink, dynamicStyle } from './Nav.styles'
 
 export interface NavProps {

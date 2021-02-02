@@ -1,7 +1,7 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx } from '@emotion/react'
-import { defaultTheme } from 'src/themes'
+import { defaultTheme } from '@aperture-ui/theme'
 import { primary, secondary, tertiary } from './Buttons.styles'
 
 export type ButtonTypes = {

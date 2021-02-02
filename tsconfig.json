@@ -3,6 +3,10 @@
   "types": ["node", "@emotion/core"],
   "compilerOptions": {
     "baseUrl": ".",
+    "paths": {
+      "@aperture-ui/theme": ["./src/themes"],
+      "@aperture-ui/components": ["src/components"]
+    },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
@@ -17,6 +21,14 @@
     "isolatedModules": true,
     "jsx": "preserve"
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "./src/**/*.ts",
+    "./src/**/*.tsx",
+    "./src/**/*",
+    "./src/**/**/*"
+  ],
   "exclude": ["node_modules"]
 }
