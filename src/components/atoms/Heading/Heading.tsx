@@ -12,8 +12,9 @@ export type HeadingProps = {
 export const Heading = ({ children, element }: HeadingProps) => {
   const Comp: ElementType = element
   const elementStyleSelector: keyof IHeadingStyles = element
-  return <Comp css={[base(), headingStyles[elementStyleSelector]]}>{children}</Comp>
-  
+  return (
+    <Comp css={[base(), headingStyles[elementStyleSelector]]}>{children}</Comp>
+  )
 }
 
 export default Heading
