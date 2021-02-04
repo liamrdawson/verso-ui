@@ -19,7 +19,7 @@
       "@aperture-ui/components": ["src/components"]
     },
     // "lib": ["dom", "dom.iterable", "es5"],   //  List of library files to be included in the compilation.
-    "esModuleInterop": false,                   //  ! Treats commonjs modules as if they have default ESModule export.
+    "esModuleInterop": true,                   //  todo: find a way to disable this to avoid forcing upstream changes. Treats commonjs modules as if they have default ESModule export.
     "skipLibCheck": false,                      //  ! Does not check declaration files.
     "moduleResolution": "Node",                 //  * Determine how modules get resolved: https://www.typescriptlang.org/docs/handbook/module-resolution.html
     // "isolatedModules": false,                //  Performs additional checks to ensure that separate compilation (such as with transpileModule or @babel/plugin-transform-typescript) would be safe.
