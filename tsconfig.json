@@ -2,36 +2,40 @@
 {
   "types": ["node", "@emotion/core"],
   "compilerOptions": {
-    "outDir": "./dist/", //  Redirect output structure to the directory.
-    "noImplicitAny": true, //  Raise error on expressions and declarations with an implied any type.
-    "module": "ESNext", //  Specify module code generation.
-    "target": "ES2015", //  Specify ECMAScript target version.
-    "jsx": "react", //  Support JSX in .tsx files
-    "allowJs": true, //  Allow JavaScript files to be compiled.
-    "baseUrl": ".", //  Base directory to resolve non-relative module names: https://www.typescriptlang.org/docs/handbook/module-resolution.html#base-url
-    "paths": {
-      //  	List of path mapping entries for module names to locations relative to the baseUrl: https://www.typescriptlang.org/docs/handbook/module-resolution.html#path-mapping
+    /*  https://www.typescriptlang.org/docs/handbook/compiler-options.html  */
+    "outDir": "dist",                         //  * Redirect output structure to the directory.
+    "rootDir": "src",                         //  * Folder structure within outDir.
+    "declaration": true,                      //  * Generates corresponding .d.ts file.
+    "strict": true,                           //  * Enable all strict type checking options.
+    // "noImplicitAny": false,                //  Enabled by strict mode
+    "module": "commonjs",                     //  * Specify module code you want to output.
+    "target": "ES2018",                       //  * Specify ECMAScript version you want to output.
+    "types": ["node", "@emotion/core"],       //  * List of names of type definitions to include: https://www.typescriptlang.org/tsconfig#types
+    "jsx": "react",                           //  Support JSX in .tsx files
+    // "allowJs": false,                      //  Allows JavaScript files to be compiled.
+    "baseUrl": ".",                           //  * Base directory to resolve non-relative module names: https://www.typescriptlang.org/docs/handbook/module-resolution.html#base-url
+    "paths": {                                //  * List of path mapping entries for module names to locations relative to the baseUrl: https://www.typescriptlang.org/docs/handbook/module-resolution.html#path-mapping
       "@aperture-ui/theme": ["./src/themes"],
       "@aperture-ui/components": ["src/components"]
     },
-    "declaration": false, //  Generates corresponding .d.ts file.
-    "lib": ["dom", "dom.iterable", "es5"], //  List of library files to be included in the compilation.
-    "skipLibCheck": true, //  Skip type checking of all declaration files (*.d.ts).
-    "strict": true, //  Enable all strict type checking options.
-    "forceConsistentCasingInFileNames": true, //  Disallow inconsistently-cased references to the same file.
-    "esModuleInterop": true, //   Emit __importStar and __importDefault helpers for runtime babel ecosystem compatibility and enable --allowSyntheticDefaultImports for typesystem compatibility.
-    "moduleResolution": "node", //  Determine how modules get resolved: https://www.typescriptlang.org/docs/handbook/module-resolution.html
-    "isolatedModules": true, //  Perform additional checks to ensure that separate compilation (such as with transpileModule or @babel/plugin-transform-typescript) would be safe.
-    "allowSyntheticDefaultImports": true // Allow default imports from modules with no default export. This does not affect code emit, just typechecking.
+    // "lib": ["dom", "dom.iterable", "es5"],   //  List of library files to be included in the compilation.
+    "esModuleInterop": false,                   //  ! Treats commonjs modules as if they have default ESModule export.
+    "skipLibCheck": false,                      //  ! Does not check declaration files.
+    "moduleResolution": "Node",                 //  * Determine how modules get resolved: https://www.typescriptlang.org/docs/handbook/module-resolution.html
+    // "isolatedModules": false,                //  Performs additional checks to ensure that separate compilation (such as with transpileModule or @babel/plugin-transform-typescript) would be safe.
+
+    /*  Additional Checks  */
+    "noUnusedLocals": true,                     //  Report errors on unused locals.
+    "noUnusedParameters": true,                 //  Report errors on unused parameters.
+    "noImplicitReturns": true,                  //  Report an error when not all code paths in function return a value.
+    "stripInternal": true,                      //  If you use JS Doc @internal then that type info will be removed from the declaration file.
+
+    /*  Advanced Options  */
+    "forceConsistentCasingInFileNames": true,   //  * Disallow inconsistently-cased references to the same file.
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    "./src/**/*.ts",
-    "./src/**/*.tsx",
-    "./src/**/*",
-    "./src/**/**/*"
-  ],
+  "include": ["src"],                           //  * What files do you want to include? Everything in src.
   "exclude": ["node_modules"]
 }
+
+//!   esModuleInterop       If your types only work when this flag is turned on, consumers of this library will also have to turn this on. Do not force this decision on consumers of your library if at all possible.
+//!   skipLibCheck          If types that you consume in this library are broken, those errors will be ignored - if you have to turn this on to get things to work then consumers of your library will also need to do the same.

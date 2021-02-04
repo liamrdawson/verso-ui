@@ -24,6 +24,7 @@
   "homepage": "https://github.com/liamrdawson/components#readme",
   "scripts": {
     "prepublishOnly": "webpack --mode=production",
+    "tbuild": "tsc",
     "build": "webpack --mode=production",
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
