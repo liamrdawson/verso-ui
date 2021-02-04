@@ -2,8 +2,8 @@
   "name": "@liamrdawson/components",
   "version": "1.0.0",
   "description": "A component library based on the principles of atomic design.",
-  "main": "dist/aperture-ui.js",
-  "types": "./dist/types.d.ts",
+  "main": "dist/index.js",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
