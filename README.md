@@ -1,6 +1,6 @@
 # Aperture UI
 
-A UI component library build with React, Typescript and Storybook.
+A UI component library built with React, Typescript and Storybook.
 
 The goals of this project are to:
 
