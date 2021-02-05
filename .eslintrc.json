@@ -8,8 +8,8 @@
     "plugin:react/recommended",
     "airbnb",
     "airbnb/hooks",
-    "prettier",
-    "eslint-config-prettier"
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -21,6 +21,9 @@
   },
   "plugins": ["react", "@typescript-eslint", "prettier"],
   "rules": {
+    "semi": ["error", "never"],                             //  Don't error semicolons (Prettier removes these).
+    "@typescript-eslint/no-unused-vars": "off",             //  TypeScript compiler takes care of this already.
+    "@typescript-eslint/no-unused-params": "off",           //  TypeScript compiler takes care of this already.
     "import/export": 0,
     "jsx-a11y/anchor-is-valid": [
       "error",

@@ -2,3 +2,4 @@
 node_modules
 preview.js
 tsconfig.json
+.eslintrc.json
