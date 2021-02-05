@@ -29,8 +29,7 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "@emotion/react": "^11.1.4",
-    "clean-webpack-plugin": "^3.0.0"
+    "@emotion/react": "^11.1.4"
   },
   "devDependencies": {
     "@babel/core": "^7.12.13",
@@ -47,6 +46,7 @@
     "@storybook/addon-essentials": "^6.1.15",
     "@storybook/addon-links": "^6.1.15",
     "@storybook/react": "^6.1.15",
+    "@typescript-eslint/parser": "^4.14.2",
     "babel-loader": "^8.2.2",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "cz-conventional-changelog": "^3.3.0",
