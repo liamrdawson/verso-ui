@@ -3,6 +3,7 @@
   "types": ["node", "@emotion/core"],
   "compilerOptions": {
     /*  https://www.typescriptlang.org/docs/handbook/compiler-options.html  */
+    "jsxFactory": "jsx",
     "outDir": "dist",                           //  * Redirect output structure to the directory.
     "rootDir": "src",                           //  * Folder structure within outDir.
     "declaration": true,                        //  * Generates corresponding .d.ts file.

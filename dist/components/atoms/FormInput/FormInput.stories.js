@@ -1,26 +1,7 @@
 "use strict";
-var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
-}) : (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}));
-var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
-    Object.defineProperty(o, "default", { enumerable: true, value: v });
-}) : function(o, v) {
-    o["default"] = v;
-});
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
-    __setModuleDefault(result, mod);
-    return result;
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.TextAreaInput = exports.FormInput = void 0;
-const React = __importStar(require("react"));
+const react_1 = require("@emotion/react");
 const FormInput_1 = require("./FormInput");
 exports.default = {
     title: 'Components/Atoms/FormInput',
@@ -28,19 +9,19 @@ exports.default = {
     parameters: {
         docs: {
             description: {
-                component: 'An input for inputting things'
-            }
-        }
-    }
+                component: 'An input for inputting things',
+            },
+        },
+    },
 };
-const TextInputTemplate = (args) => React.createElement(FormInput_1.TextInput, Object.assign({}, args));
+const TextInputTemplate = (args) => react_1.jsx(FormInput_1.TextInput, Object.assign({}, args));
 exports.FormInput = TextInputTemplate.bind({});
 exports.FormInput.args = {
     label: 'I am a label',
-    type: 'text'
+    type: 'text',
 };
-const TextAreaTemplate = (args) => React.createElement(FormInput_1.TextArea, Object.assign({}, args));
+const TextAreaTemplate = (args) => react_1.jsx(FormInput_1.TextArea, Object.assign({}, args));
 exports.TextAreaInput = TextAreaTemplate.bind({});
 exports.TextAreaInput.args = {
-    label: 'I am a label'
+    label: 'I am a label',
 };

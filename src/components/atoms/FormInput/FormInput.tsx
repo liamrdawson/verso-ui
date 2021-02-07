@@ -10,7 +10,11 @@ export type FormTypes = {
   additionalStyles?: SerializedStyles
 }
 
-export const TextInput = ({ label, type, additionalStyles }: FormTypes) => {
+export const TextInput: React.FC<FormTypes> = ({
+  label,
+  type,
+  additionalStyles,
+}) => {
   const theme: ITheme = defaultTheme
   const styling = [additionalStyles, labelAndForm(theme)]
   return (
@@ -23,7 +27,7 @@ export const TextInput = ({ label, type, additionalStyles }: FormTypes) => {
   )
 }
 
-export const TextArea = ({ label, additionalStyles }: FormTypes) => {
+export const TextArea: React.FC<FormTypes> = ({ label, additionalStyles }) => {
   const theme: ITheme = defaultTheme
   const styling = [additionalStyles, labelAndForm(theme)]
   return (

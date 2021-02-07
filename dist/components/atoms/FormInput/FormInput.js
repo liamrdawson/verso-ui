@@ -6,7 +6,7 @@ exports.TextArea = exports.TextInput = void 0;
 const theme_1 = require("@aperture-ui/theme");
 const react_1 = require("@emotion/react");
 const FormInput_styles_1 = require("./FormInput.styles");
-const TextInput = ({ label, type, additionalStyles }) => {
+const TextInput = ({ label, type, additionalStyles, }) => {
     const theme = theme_1.defaultTheme;
     const styling = [additionalStyles, FormInput_styles_1.labelAndForm(theme)];
     return (react_1.jsx("div", { css: styling },

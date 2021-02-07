@@ -15,7 +15,7 @@ export interface PageObject {
   pageName: string
 }
 
-export const Nav = (props: NavProps) => {
+export const Nav: React.FC<NavProps> = (props) => {
   const { pages } = props
   // const theme: ITheme = useTheme()
   const theme: ITheme = defaultTheme

@@ -1,20 +1,20 @@
-import { css } from '@emotion/react'
+import { css, SerializedStyles } from '@emotion/react'
 import {
   typeScale,
   typeWeight,
   SPACING,
   ITheme,
-  defaultTheme
+  defaultTheme,
 } from '@aperture-ui/theme'
 
-export const labelAndForm = (theme: ITheme = defaultTheme) =>
+export const labelAndForm = (theme: ITheme = defaultTheme): SerializedStyles =>
   css({
     display: 'flex',
     flexDirection: 'column',
-    fontFamily: theme.typography.primaryFont
+    fontFamily: theme.typography.primaryFont,
   })
 
-export const input = (theme: ITheme = defaultTheme) =>
+export const input = (theme: ITheme = defaultTheme): SerializedStyles =>
   css({
     fontFamily: theme.typography.primaryFont,
     boxSizing: 'border-box',
@@ -27,14 +27,14 @@ export const input = (theme: ITheme = defaultTheme) =>
     height: '100%',
     '&:invalid': {
       outline: 'none',
-      boxShadow: `0 0 0 4px ${theme.colour.tertiary}`
-    }
+      boxShadow: `0 0 0 4px ${theme.colour.tertiary}`,
+    },
   })
 
-export const labelStyle = () =>
+export const labelStyle = (): SerializedStyles =>
   css({
     textAlign: 'left',
     fontSize: typeScale.small,
     fontWeight: typeWeight.light,
-    marginBottom: SPACING[3]
+    marginBottom: SPACING[3],
   })

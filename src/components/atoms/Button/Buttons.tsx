@@ -9,7 +9,7 @@ export type ButtonTypes = {
   isDisabled: boolean
 }
 
-export const PrimaryButton = (props: ButtonTypes) => {
+export const PrimaryButton: React.FC<ButtonTypes> = (props) => {
   const { label, isDisabled } = props
   const theme = defaultTheme
   return (
@@ -19,7 +19,7 @@ export const PrimaryButton = (props: ButtonTypes) => {
   )
 }
 
-export const SecondaryButton = (props: ButtonTypes) => {
+export const SecondaryButton: React.FC<ButtonTypes> = (props) => {
   const { label } = props
   return (
     <button type="button" css={secondary(defaultTheme)}>
@@ -28,7 +28,7 @@ export const SecondaryButton = (props: ButtonTypes) => {
   )
 }
 
-export const TertiaryButton = (props: ButtonTypes) => {
+export const TertiaryButton: React.FC<ButtonTypes> = (props) => {
   const { label } = props
   return (
     <button type="button" css={tertiary(defaultTheme)}>

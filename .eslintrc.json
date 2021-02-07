@@ -9,7 +9,8 @@
     "airbnb",
     "airbnb/hooks",
     "plugin:@typescript-eslint/recommended",
-    "plugin:@typescript-eslint/recommended-requiring-type-checking"
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "prettier"                                              //  Keep last to override other configs.
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -17,10 +18,15 @@
       "jsx": true
     },
     "ecmaVersion": 12,
-    "sourceType": "module"
+    "sourceType": "module",
+    "project": "./tsconfig.eslint.json",
+    "jsxImportSource": "@emotion/react"
   },
   "plugins": ["react", "@typescript-eslint", "prettier"],
   "rules": {
+    // "implicit-arrow-linebreak": ["error", "below"],
+    "prefer-const": "error",
+    "object-curly-newline": "off",                          //  Prettier handles this.
     "semi": ["error", "never"],                             //  Don't error semicolons (Prettier removes these).
     "@typescript-eslint/no-unused-vars": "off",             //  TypeScript compiler takes care of this already.
     "@typescript-eslint/no-unused-params": "off",           //  TypeScript compiler takes care of this already.

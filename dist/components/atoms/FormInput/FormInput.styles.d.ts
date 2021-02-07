@@ -1,4 +1,5 @@
+import { SerializedStyles } from '@emotion/react';
 import { ITheme } from '@aperture-ui/theme';
-export declare const labelAndForm: (theme?: ITheme) => import("@emotion/utils").SerializedStyles;
-export declare const input: (theme?: ITheme) => import("@emotion/utils").SerializedStyles;
-export declare const labelStyle: () => import("@emotion/utils").SerializedStyles;
+export declare const labelAndForm: (theme?: ITheme) => SerializedStyles;
+export declare const input: (theme?: ITheme) => SerializedStyles;
+export declare const labelStyle: () => SerializedStyles;

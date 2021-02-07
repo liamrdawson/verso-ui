@@ -1,14 +1,15 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { jsx, SerializedStyles } from '@emotion/react';
+import { SerializedStyles } from '@emotion/react';
+import { ElementType } from 'react';
 import { ITypeWeight, ITypeScale } from '@aperture-ui/theme';
 export declare type TextProps = {
     fontWeight: keyof ITypeWeight;
     fontSize: keyof ITypeScale;
-    element: any;
+    element: ElementType;
     children: string;
-    css?: any;
+    css?: SerializedStyles;
     additionalStyles?: SerializedStyles;
 };
-export declare const Text: ({ fontWeight, fontSize, element, css, additionalStyles, children }: TextProps) => jsx.JSX.Element;
+export declare const Text: React.FC<TextProps>;
 export default Text;

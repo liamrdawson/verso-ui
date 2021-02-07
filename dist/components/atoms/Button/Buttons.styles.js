@@ -12,7 +12,7 @@ exports.base = react_1.css({
     cursor: 'pointer',
     fontWeight: 900,
     fontSize: theme_1.typeScale.normal,
-    transition: 'background-color 0.2s linear, color 0.2s linear'
+    transition: 'background-color 0.2s linear, color 0.2s linear',
 });
 const primary = (theme = theme_1.defaultTheme, isDisabled) => react_1.css({
     textTransform: 'uppercase',
@@ -20,15 +20,15 @@ const primary = (theme = theme_1.defaultTheme, isDisabled) => react_1.css({
     color: theme.colour.textOnPrimary,
     border: 'none',
     '&:hover': {
-        backgroundColor: theme.colour.primaryHover
+        backgroundColor: theme.colour.primaryHover,
     },
     '&:active': {
-        backgroundColor: theme.colour.primaryActive
+        backgroundColor: theme.colour.primaryActive,
     },
     '&:disabled': {
         backgroundColor: theme.colour.disabled,
-        cursor: 'not-allowed'
-    }
+        cursor: 'not-allowed',
+    },
 }, exports.base);
 exports.primary = primary;
 const secondary = (theme = theme_1.defaultTheme) => react_1.css({
@@ -38,17 +38,17 @@ const secondary = (theme = theme_1.defaultTheme) => react_1.css({
     textTransform: 'uppercase',
     '&:hover': {
         borderColor: theme.colour.primaryHover,
-        color: theme.colour.primaryHover
+        color: theme.colour.primaryHover,
     },
     '&:active': {
         borderColor: theme.colour.secondaryActive,
-        color: theme.colour.secondaryActive
+        color: theme.colour.secondaryActive,
     },
     '&:disabled': {
         backgroundColor: theme.colour.disabled,
         colour: theme.colour.disabled,
-        cursor: 'not-allowed'
-    }
+        cursor: 'not-allowed',
+    },
 }, exports.base);
 exports.secondary = secondary;
 const tertiary = (theme = theme_1.defaultTheme) => react_1.css({
@@ -58,16 +58,16 @@ const tertiary = (theme = theme_1.defaultTheme) => react_1.css({
     textTransform: 'uppercase',
     '&:hover': {
         textDecoration: 'underline',
-        color: theme.colour.tertiaryHover
+        color: theme.colour.tertiaryHover,
     },
     '&:active': {
         borderColor: theme.colour.tertiaryActive,
-        color: theme.colour.tertiaryActive
+        color: theme.colour.tertiaryActive,
     },
     '&:disabled': {
         backgroundColor: theme.colour.disabled,
         colour: theme.colour.disabled,
-        cursor: 'not-allowed'
-    }
+        cursor: 'not-allowed',
+    },
 }, exports.base);
 exports.tertiary = tertiary;

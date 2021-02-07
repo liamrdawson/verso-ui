@@ -1,4 +1,4 @@
-import * as React from 'react'
+import { jsx } from '@emotion/react'
 import { Meta, Story } from '@storybook/react/types-6-0'
 
 import { Text, TextProps } from './Text'
@@ -10,40 +10,40 @@ export default {
     docs: {
       description: {
         component:
-          'The Text component renders its children and applies standard font styling. It receives two props `fontSize` and `fontWeight`.'
-      }
-    }
+          'The Text component renders its children and applies standard font styling. It receives two props `fontSize` and `fontWeight`.',
+      },
+    },
   },
   argTypes: {
     element: {
       control: {
         type: 'select',
-        options: ['p', 'a']
-      }
+        options: ['p', 'a'],
+      },
     },
     fontSize: {
       control: {
         type: 'select',
-        options: ['small', 'normal', 'caption', 'medium', 'large']
-      }
+        options: ['small', 'normal', 'caption', 'medium', 'large'],
+      },
     },
     fontWeight: {
       control: {
         type: 'select',
-        options: ['light', 'medium', 'bold', 'black']
-      }
+        options: ['light', 'medium', 'bold', 'black'],
+      },
     },
     css: {
       table: {
-        disable: true
-      }
+        disable: true,
+      },
     },
     additionalStyles: {
       table: {
-        disable: true
-      }
-    }
-  }
+        disable: true,
+      },
+    },
+  },
 } as Meta
 
 const TextTemplate: Story<TextProps> = (args) => <Text {...args} />
@@ -52,5 +52,5 @@ TextComponent.args = {
   children: 'The quick brown fox jumps over the lazy dog.',
   fontSize: 'normal',
   fontWeight: 'light',
-  element: 'p'
+  element: 'p',
 }

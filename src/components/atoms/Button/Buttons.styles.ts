@@ -1,4 +1,4 @@
-import { css } from '@emotion/react'
+import { css, SerializedStyles } from '@emotion/react'
 import { ITheme, typeScale, SPACING, defaultTheme } from '@aperture-ui/theme'
 
 export const base = css({
@@ -10,10 +10,13 @@ export const base = css({
   cursor: 'pointer',
   fontWeight: 900,
   fontSize: typeScale.normal,
-  transition: 'background-color 0.2s linear, color 0.2s linear'
+  transition: 'background-color 0.2s linear, color 0.2s linear',
 })
 
-export const primary = (theme: ITheme = defaultTheme, isDisabled: boolean) =>
+export const primary = (
+  theme: ITheme = defaultTheme,
+  isDisabled: boolean,
+): SerializedStyles =>
   css(
     {
       textTransform: 'uppercase',
@@ -21,20 +24,20 @@ export const primary = (theme: ITheme = defaultTheme, isDisabled: boolean) =>
       color: theme.colour.textOnPrimary,
       border: 'none',
       '&:hover': {
-        backgroundColor: theme.colour.primaryHover
+        backgroundColor: theme.colour.primaryHover,
       },
       '&:active': {
-        backgroundColor: theme.colour.primaryActive
+        backgroundColor: theme.colour.primaryActive,
       },
       '&:disabled': {
         backgroundColor: theme.colour.disabled,
-        cursor: 'not-allowed'
-      }
+        cursor: 'not-allowed',
+      },
     },
-    base
+    base,
   )
 
-export const secondary = (theme: ITheme = defaultTheme) =>
+export const secondary = (theme: ITheme = defaultTheme): SerializedStyles =>
   css(
     {
       backgroundColor: theme.colour.secondary,
@@ -43,22 +46,22 @@ export const secondary = (theme: ITheme = defaultTheme) =>
       textTransform: 'uppercase',
       '&:hover': {
         borderColor: theme.colour.primaryHover,
-        color: theme.colour.primaryHover
+        color: theme.colour.primaryHover,
       },
       '&:active': {
         borderColor: theme.colour.secondaryActive,
-        color: theme.colour.secondaryActive
+        color: theme.colour.secondaryActive,
       },
       '&:disabled': {
         backgroundColor: theme.colour.disabled,
         colour: theme.colour.disabled,
-        cursor: 'not-allowed'
-      }
+        cursor: 'not-allowed',
+      },
     },
-    base
+    base,
   )
 
-export const tertiary = (theme: ITheme = defaultTheme) =>
+export const tertiary = (theme: ITheme = defaultTheme): SerializedStyles =>
   css(
     {
       backgroundColor: theme.colour.secondary,
@@ -67,17 +70,17 @@ export const tertiary = (theme: ITheme = defaultTheme) =>
       textTransform: 'uppercase',
       '&:hover': {
         textDecoration: 'underline',
-        color: theme.colour.tertiaryHover
+        color: theme.colour.tertiaryHover,
       },
       '&:active': {
         borderColor: theme.colour.tertiaryActive,
-        color: theme.colour.tertiaryActive
+        color: theme.colour.tertiaryActive,
       },
       '&:disabled': {
         backgroundColor: theme.colour.disabled,
         colour: theme.colour.disabled,
-        cursor: 'not-allowed'
-      }
+        cursor: 'not-allowed',
+      },
     },
-    base
+    base,
   )

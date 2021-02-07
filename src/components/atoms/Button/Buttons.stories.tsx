@@ -1,11 +1,11 @@
-import * as React from 'react'
 import { Meta, Story } from '@storybook/react/types-6-0'
 
+import { jsx } from '@emotion/react'
 import {
   PrimaryButton,
   SecondaryButton,
   TertiaryButton,
-  ButtonTypes
+  ButtonTypes,
 } from './Buttons'
 
 export default {
@@ -14,10 +14,10 @@ export default {
   parameters: {
     docs: {
       description: {
-        component: 'New buttons for new things'
-      }
-    }
-  }
+        component: 'New buttons for new things',
+      },
+    },
+  },
 } as Meta
 
 const PrimaryTemplate: Story<ButtonTypes> = (args) => (
@@ -25,7 +25,7 @@ const PrimaryTemplate: Story<ButtonTypes> = (args) => (
 )
 export const Primary = PrimaryTemplate.bind({})
 Primary.args = {
-  label: 'Primary Button'
+  label: 'Primary Button',
 }
 
 const SecondaryTemplate: Story<ButtonTypes> = (args) => (
@@ -33,7 +33,7 @@ const SecondaryTemplate: Story<ButtonTypes> = (args) => (
 )
 export const Secondary = SecondaryTemplate.bind({})
 Secondary.args = {
-  label: 'Secondary Button'
+  label: 'Secondary Button',
 }
 
 const TertiaryTemplate: Story<ButtonTypes> = (args) => (
@@ -41,5 +41,5 @@ const TertiaryTemplate: Story<ButtonTypes> = (args) => (
 )
 export const Tertiary = TertiaryTemplate.bind({})
 Tertiary.args = {
-  label: 'Tertiary Button'
+  label: 'Tertiary Button',
 }

@@ -1,10 +1,5 @@
-import { css } from '@emotion/react'
-import {
-  ITheme,
-  ITypeScale,
-  ITypeWeight,
-  defaultTheme
-} from '@aperture-ui/theme'
+import { css, SerializedStyles } from '@emotion/react'
+import { ITheme, ITypeScale, ITypeWeight, defaultTheme } from 'src/themes'
 
 /**
  * TIP: Using a generic string as an index, TypeScript will complain that it can't guarantee that whatever string is passed into your function will actually match a property name on your interface.
@@ -13,13 +8,13 @@ import {
 
 export const textStyles = (theme: ITheme = defaultTheme) => (
   fontWeight: keyof ITypeWeight = 'light',
-  fontSize: keyof ITypeScale = 'normal'
-) =>
+  fontSize: keyof ITypeScale = 'small',
+): SerializedStyles =>
   css({
     fontFamily: theme.typography.primaryFont,
     color: theme.colour.primary,
     fontWeight: theme.typography.typeWeight[fontWeight],
-    fontSize: theme.typography.typeScale[fontSize]
+    fontSize: theme.typography.typeScale[fontSize],
   })
 
 export default textStyles

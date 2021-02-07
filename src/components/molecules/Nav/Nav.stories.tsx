@@ -1,4 +1,4 @@
-import * as React from 'react'
+import { jsx } from '@emotion/react'
 import { Meta, Story } from '@storybook/react/types-6-0'
 
 import { Nav, NavProps } from './Nav'
@@ -10,10 +10,10 @@ export default {
     docs: {
       description: {
         component:
-          'The `<Nav>` component represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents. Common examples of navigation sections are menus, tables of contents, and indexes.'
-      }
-    }
-  }
+          'The `<Nav>` component represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents. Common examples of navigation sections are menus, tables of contents, and indexes.',
+      },
+    },
+  },
 } as Meta
 
 const NavTemplate: Story<NavProps> = (args) => <Nav {...args} />
@@ -22,15 +22,15 @@ NavComponent.args = {
   pages: [
     {
       pageName: 'Prints',
-      pathName: '/prints'
+      pathName: '/prints',
     },
     {
       pageName: 'About',
-      pathName: '/about'
+      pathName: '/about',
     },
     {
       pageName: 'Contact',
-      pathName: '/contact'
-    }
-  ]
+      pathName: '/contact',
+    },
+  ],
 }

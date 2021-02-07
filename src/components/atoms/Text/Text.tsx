@@ -6,31 +6,31 @@ import {
   ITypeWeight,
   ITypeScale,
   ITheme,
-  defaultTheme
+  defaultTheme,
 } from '@aperture-ui/theme'
 import { textStyles } from './Text.styles'
 
 export type TextProps = {
   fontWeight: keyof ITypeWeight
   fontSize: keyof ITypeScale
-  element: any
+  element: ElementType
   children: string
-  css?: any
+  css?: SerializedStyles
   additionalStyles?: SerializedStyles
 }
 
-export const Text = ({
+export const Text: React.FC<TextProps> = ({
   fontWeight,
   fontSize,
   element,
   css,
   additionalStyles,
-  children
-}: TextProps) => {
+  children,
+}) => {
   // const theme: ITheme = useTheme()
   const theme: ITheme = defaultTheme
   const base = textStyles(theme)(fontWeight, fontSize)
-  const Comp: ElementType = element
+  const Comp = element
   const styles = [css, base, additionalStyles]
 
   return <Comp css={styles}>{children}</Comp>

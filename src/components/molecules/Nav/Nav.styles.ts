@@ -1,13 +1,9 @@
-import { css } from '@emotion/react'
+import { css, SerializedStyles } from '@emotion/react'
 import { SPACING, LAYOUT, ITheme, defaultTheme } from '@aperture-ui/theme'
 
-export const baseNav = () =>
-  css({
-    display: 'flex',
-    height: '100%'
-  })
+export const baseNav = css({ display: 'flex', height: '100%' })
 
-export const baseUl = (theme: ITheme = defaultTheme) =>
+export const baseUl = (theme: ITheme = defaultTheme): SerializedStyles =>
   css({
     listStyle: 'none',
     padding: 0,
@@ -18,29 +14,28 @@ export const baseUl = (theme: ITheme = defaultTheme) =>
     height: '100%',
     '@media(min-width: 420px)': {
       flexDirection: 'row',
-      margin: 0
+      margin: 0,
     },
     li: {
       marginTop: `${LAYOUT[7]}px`,
       '@media(min-width: 420px)': {
-        margin: `0 ${SPACING[8]}px`
-      }
+        margin: `0 ${SPACING[8]}px`,
+      },
     },
     'li span a': {
       color: theme.colour.primary,
       '&:hover': {
-        color: theme.colour.tertiary
-      }
-    }
+        color: theme.colour.tertiary,
+      },
+    },
   })
 
-export const baseLink = () =>
-  css({
-    textDecoration: 'none',
-    cursor: 'pointer'
-  })
+export const baseLink = css({
+  textDecoration: 'none',
+  cursor: 'pointer',
+})
 
-export const dynamicStyle = (theme: ITheme = defaultTheme) =>
+export const dynamicStyle = (theme: ITheme = defaultTheme): SerializedStyles =>
   css({
-    color: theme.colour.tertiary
+    color: theme.colour.tertiary,
   })

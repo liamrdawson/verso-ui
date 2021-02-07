@@ -6,7 +6,7 @@ const theme_1 = require("@aperture-ui/theme");
 const labelAndForm = (theme = theme_1.defaultTheme) => react_1.css({
     display: 'flex',
     flexDirection: 'column',
-    fontFamily: theme.typography.primaryFont
+    fontFamily: theme.typography.primaryFont,
 });
 exports.labelAndForm = labelAndForm;
 const input = (theme = theme_1.defaultTheme) => react_1.css({
@@ -21,14 +21,14 @@ const input = (theme = theme_1.defaultTheme) => react_1.css({
     height: '100%',
     '&:invalid': {
         outline: 'none',
-        boxShadow: `0 0 0 4px ${theme.colour.tertiary}`
-    }
+        boxShadow: `0 0 0 4px ${theme.colour.tertiary}`,
+    },
 });
 exports.input = input;
 const labelStyle = () => react_1.css({
     textAlign: 'left',
     fontSize: theme_1.typeScale.small,
     fontWeight: theme_1.typeWeight.light,
-    marginBottom: theme_1.SPACING[3]
+    marginBottom: theme_1.SPACING[3],
 });
 exports.labelStyle = labelStyle;
