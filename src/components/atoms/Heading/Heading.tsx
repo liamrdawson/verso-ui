@@ -1,20 +1,17 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx, SerializedStyles } from '@emotion/react'
-import { headingStyles, base, IHeadingStyles } from './Heading.styles'
+import { headingStyles, base } from './Heading.styles'
 
 export type HeadingProps = {
   children: string
-  element: any // TODO: replace 'any' with usable type value. We need to be able to receive this and use it as an object key AND an element.
+  element: React.ElementType
   css?: SerializedStyles
 }
 
-export const Heading = ({ children, element }: HeadingProps) => {
+export const Heading: React.FC<HeadingProps> = ({ children, element }) => {
   const Comp = element
-  const elementStyleSelector: keyof IHeadingStyles = element
-  return (
-    <Comp css={[base(), headingStyles[elementStyleSelector]]}>{children}</Comp>
-  )
+  return <Comp css={[base(), headingStyles]}>{children}</Comp>
 }
 
 export default Heading

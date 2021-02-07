@@ -7,9 +7,9 @@ export interface IHeadingElement {
     readonly fontSize: string;
 }
 export interface IHeadingStyles {
-    readonly h1: IHeadingElement;
-    readonly h2: IHeadingElement;
-    readonly h3: IHeadingElement;
-    readonly h4: IHeadingElement;
+    readonly h1: string;
+    readonly h2: string;
+    readonly h3: string;
+    readonly h4: string;
 }
 export declare const headingStyles: CSSObject;

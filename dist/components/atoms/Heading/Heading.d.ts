@@ -1,10 +1,10 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { jsx, SerializedStyles } from '@emotion/react';
+import { SerializedStyles } from '@emotion/react';
 export declare type HeadingProps = {
     children: string;
-    element: any;
+    element: React.ElementType;
     css?: SerializedStyles;
 };
-export declare const Heading: ({ children, element }: HeadingProps) => jsx.JSX.Element;
+export declare const Heading: React.FC<HeadingProps>;
 export default Heading;
