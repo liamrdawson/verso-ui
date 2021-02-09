@@ -1,4 +1,4 @@
-# Aperture UI
+# UI Component Library
 
 A UI component library built with React, Typescript and Storybook.
 
