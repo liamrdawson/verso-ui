@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot Test: Text 1`] = `
+<a
+  className="css-zkrtb7-Text"
+>
+  I am a string
+</a>
+`;
+
+exports[`Snapshot Test: Text 2`] = `
+<p
+  className="css-1aktc3o-Text"
+>
+  I am a string
+</p>
+`;

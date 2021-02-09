@@ -1,7 +1,7 @@
 import { SerializedStyles } from '@emotion/react';
 export declare type FormTypes = {
     label: string;
-    type: string;
+    type?: string;
     additionalStyles?: SerializedStyles;
 };
 export declare const TextInput: React.FC<FormTypes>;

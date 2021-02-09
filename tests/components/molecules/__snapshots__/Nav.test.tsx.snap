@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot Test: Contact Form 1`] = `
+<nav
+  className="css-23iqwz-Nav"
+>
+  <ul
+    className="css-rk3qdn-Nav"
+  >
+    <li>
+      <span
+        className="css-r5wu0g"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        <a
+          className="css-8mhfhs-Text"
+        >
+          Page One
+        </a>
+      </span>
+    </li>
+    <li>
+      <span
+        className="css-r5wu0g"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        <a
+          className="css-8mhfhs-Text"
+        >
+          Page Two
+        </a>
+      </span>
+    </li>
+  </ul>
+</nav>
+`;

@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot Test: Heading Level Four 1`] = `
+<h4
+  className="css-1eiceoa-Heading"
+>
+  Heading Level One
+</h4>
+`;
+
+exports[`Snapshot Test: Heading Level One 1`] = `
+<h1
+  className="css-1eiceoa-Heading"
+>
+  Heading Level One
+</h1>
+`;
+
+exports[`Snapshot Test: Heading Level Three 1`] = `
+<h3
+  className="css-1eiceoa-Heading"
+>
+  Heading Level One
+</h3>
+`;
+
+exports[`Snapshot Test: Heading Level Two 1`] = `
+<h2
+  className="css-1eiceoa-Heading"
+>
+  Heading Level One
+</h2>
+`;

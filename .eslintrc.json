@@ -28,8 +28,8 @@
     "prettier"
   ],
   "rules": {
-    "react/jsx-uses-react": "off",                        //  As of React 17, import React is not required when writing JSX, this stops eslint from shouting when you don't import React
-    "react/react-in-jsx-scope": "off",
+    "react/jsx-uses-react": "error",                       //  As of React 17, import React is not required when writing JSX, this stops eslint from shouting when you don't import React
+    "react/react-in-jsx-scope": "error",
     // "implicit-arrow-linebreak": ["error", "below"],
     "prefer-const": "error",
     "object-curly-newline": "off",                        //  Prettier handles this.

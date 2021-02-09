@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot Test: Contact Form 1`] = `
+<form
+  className="css-154v6jj-ContactForm"
+>
+  <div
+    className="css-6n93mb-TextInput"
+  >
+    <label
+      className="css-2x82w0-TextInput"
+      htmlFor="First Name"
+    >
+      First Name
+    </label>
+    <input
+      className="css-18ek46i-TextInput"
+      id="First Name"
+      name="First Name"
+      type="text"
+    />
+  </div>
+  <div
+    className="css-1n3bh1d-TextInput"
+  >
+    <label
+      className="css-2x82w0-TextInput"
+      htmlFor="Last Name"
+    >
+      Last Name
+    </label>
+    <input
+      className="css-18ek46i-TextInput"
+      id="Last Name"
+      name="Last Name"
+      type="text"
+    />
+  </div>
+  <div
+    className="css-boj1sm-TextInput"
+  >
+    <label
+      className="css-2x82w0-TextInput"
+      htmlFor="Email Address"
+    >
+      Email Address
+    </label>
+    <input
+      className="css-18ek46i-TextInput"
+      id="Email Address"
+      name="Email Address"
+      type="email"
+    />
+  </div>
+  <div
+    className="css-1agg0r2-TextInput"
+  >
+    <label
+      className="css-2x82w0-TextInput"
+      htmlFor="Subject"
+    >
+      Subject
+    </label>
+    <input
+      className="css-18ek46i-TextInput"
+      id="Subject"
+      name="Subject"
+      type="text"
+    />
+  </div>
+  <div
+    className="css-12anhju-TextArea"
+  >
+    <label
+      className="css-1bawu2g-TextArea"
+      htmlFor="Message"
+    >
+      Message
+    </label>
+    <textarea
+      className="css-1jf3zmb-TextArea"
+      id="Message"
+      name="Message"
+    />
+  </div>
+  <button
+    className="css-1195o8y-PrimaryButton"
+    type="button"
+  >
+    Send
+  </button>
+</form>
+`;
