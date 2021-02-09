@@ -6,7 +6,7 @@ import { labelAndForm, labelStyle, input } from './FormInput.styles'
 
 export type FormTypes = {
   label: string
-  type: string
+  type?: string
   additionalStyles?: SerializedStyles
 }
 

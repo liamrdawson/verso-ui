@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot Test: TextArea 1`] = `
+<div
+  className="css-z21lfh-TextArea"
+>
+  <label
+    className="css-1bawu2g-TextArea"
+    htmlFor="Secondary Button"
+  >
+    Secondary Button
+  </label>
+  <textarea
+    className="css-1jf3zmb-TextArea"
+    id="Secondary Button"
+    name="Secondary Button"
+  />
+</div>
+`;
+
+exports[`Snapshot Test: TextInput 1`] = `
+<div
+  className="css-6r466p-TextInput"
+>
+  <label
+    className="css-2x82w0-TextInput"
+    htmlFor="Text input label"
+  >
+    Text input label
+  </label>
+  <input
+    className="css-18ek46i-TextInput"
+    id="Text input label"
+    name="Text input label"
+    type="text"
+  />
+</div>
+`;
