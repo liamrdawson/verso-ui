@@ -22,36 +22,64 @@
     "project": "./tsconfig.eslint.json",
     "jsxImportSource": "@emotion/react"
   },
-  "plugins": ["react", "@typescript-eslint", "prettier"],
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "prettier"
+  ],
   "rules": {
+    "react/jsx-uses-react": "off",                        //  As of React 17, import React is not required when writing JSX, this stops eslint from shouting when you don't import React
+    "react/react-in-jsx-scope": "off",
     // "implicit-arrow-linebreak": ["error", "below"],
     "prefer-const": "error",
-    "object-curly-newline": "off",                          //  Prettier handles this.
-    "semi": ["error", "never"],                             //  Don't error semicolons (Prettier removes these).
-    "@typescript-eslint/no-unused-vars": "off",             //  TypeScript compiler takes care of this already.
-    "@typescript-eslint/no-unused-params": "off",           //  TypeScript compiler takes care of this already.
+    "object-curly-newline": "off",                        //  Prettier handles this.
+    "semi": [
+      "error",
+      "never"
+    ], //  Don't error semicolons (Prettier removes these).
+    "@typescript-eslint/no-unused-vars": "off",           //  TypeScript compiler takes care of this already.
+    "@typescript-eslint/no-unused-params": "off",         //  TypeScript compiler takes care of this already.
     "import/export": 0,
     "jsx-a11y/anchor-is-valid": [
       "error",
       {
-        "components": ["Link"],
-        "specialLink": ["hrefLeft", "hrefRight"],
-        "aspects": ["invalidHref", "preferButton"]
+        "components": [
+          "Link"
+        ],
+        "specialLink": [
+          "hrefLeft",
+          "hrefRight"
+        ],
+        "aspects": [
+          "invalidHref",
+          "preferButton"
+        ]
       }
     ],
     "react/prop-types": "off",
     "react/jsx-props-no-spreading": "off",
     "no-use-before-define": "off",
-    "@typescript-eslint/no-use-before-define": ["error"],
+    "@typescript-eslint/no-use-before-define": [
+      "error"
+    ],
     "import/no-extraneous-dependencies": [
       "error",
       {
-        "devDependencies": ["**/*.stories.tsx"]
+        "devDependencies": [
+          "**/*.stories.tsx"
+        ]
       }
     ],
     "react/jsx-filename-extension": [
       2,
-      { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
+      {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ]
+      }
     ],
     "import/extensions": [
       "error",
@@ -69,12 +97,14 @@
   },
   "settings": {
     "import/parsers": {
-      "@typescript-eslint/parser": [".ts", ".tsx"]
+      "@typescript-eslint/parser": [
+        ".ts",
+        ".tsx"
+      ]
     },
     "import/resolver": {
-      // use <root>/tsconfig.json
       "typescript": {
-        "alwaysTryTypes": true // always try to resolve types under `<root>@types` directory even it doesn't contain any source code, like `@types/unist`
+        "alwaysTryTypes": true                            // always try to resolve types under `<root>@types` directory even it doesn't contain any source code, like `@types/unist`
       }
     }
   }

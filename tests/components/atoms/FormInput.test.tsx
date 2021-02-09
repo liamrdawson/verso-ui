@@ -1,4 +1,3 @@
-import React from 'react'
 import { jsx } from '@emotion/react'
 import renderer from 'react-test-renderer'
 import { TextInput, TextArea } from '../../../src'
