@@ -1,5 +1,5 @@
 import { css, CSSObject, SerializedStyles } from '@emotion/react'
-import { typeScale, defaultTheme, ITheme } from '@aperture-ui/theme'
+import { typeScale, defaultTheme, ITheme } from 'src/themes'
 
 export const base = (theme: ITheme = defaultTheme): SerializedStyles =>
   css({

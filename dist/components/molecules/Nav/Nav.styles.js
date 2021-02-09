@@ -2,9 +2,9 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.dynamicStyle = exports.baseLink = exports.baseUl = exports.baseNav = void 0;
 const react_1 = require("@emotion/react");
-const theme_1 = require("@aperture-ui/theme");
+const themes_1 = require("src/themes");
 exports.baseNav = react_1.css({ display: 'flex', height: '100%' });
-const baseUl = (theme = theme_1.defaultTheme) => react_1.css({
+const baseUl = (theme = themes_1.defaultTheme) => react_1.css({
     listStyle: 'none',
     padding: 0,
     margin: 0,
@@ -17,9 +17,9 @@ const baseUl = (theme = theme_1.defaultTheme) => react_1.css({
         margin: 0,
     },
     li: {
-        marginTop: `${theme_1.LAYOUT[7]}px`,
+        marginTop: `${themes_1.LAYOUT[7]}px`,
         '@media(min-width: 420px)': {
-            margin: `0 ${theme_1.SPACING[8]}px`,
+            margin: `0 ${themes_1.SPACING[8]}px`,
         },
     },
     'li span a': {
@@ -34,7 +34,7 @@ exports.baseLink = react_1.css({
     textDecoration: 'none',
     cursor: 'pointer',
 });
-const dynamicStyle = (theme = theme_1.defaultTheme) => react_1.css({
+const dynamicStyle = (theme = themes_1.defaultTheme) => react_1.css({
     color: theme.colour.tertiary,
 });
 exports.dynamicStyle = dynamicStyle;

@@ -1,0 +1,15 @@
+{
+  "extends": "../tsconfig.json",
+  "references": [               //  This allows us to have two disconnected tsconfig sub-projects within the same repo. We can use this to refer to the (already-built) src folder in our tests folder without having to compile and build everything all together.
+      {
+        "name": "@liamrdawson/components",
+        "path": ".."
+      }
+    ],
+    "compilerOptions": {
+      "types": ["jest"],
+      "rootDir": "..",        //  Our root directory needs to contain all of the source code needed to make things work. In this case, the tests also need src.
+      "noEmit": true          //  Jest won't require that we build JS from our TS - it just needs this tsconfig to exist, so noEmit: true is safe for us to do here.
+    },
+    "include": ["."] // We're saying "Everything in the tests folder is what this tsconfig pertains to".
+}

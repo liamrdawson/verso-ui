@@ -5,7 +5,7 @@ import {
   SPACING,
   ITheme,
   defaultTheme,
-} from '@aperture-ui/theme'
+} from 'src/themes'
 
 export const labelAndForm = (theme: ITheme = defaultTheme): SerializedStyles =>
   css({

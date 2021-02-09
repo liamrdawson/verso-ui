@@ -1,5 +1,5 @@
 import { CSSObject, SerializedStyles } from '@emotion/react';
-import { ITheme } from '@aperture-ui/theme';
+import { ITheme } from 'src/themes';
 export declare const base: (theme?: ITheme) => SerializedStyles;
 export declare const componentStyles: () => CSSObject;
 export interface IHeadingElement {

@@ -1,5 +1,5 @@
 import { css, SerializedStyles } from '@emotion/react'
-import { SPACING, LAYOUT, ITheme, defaultTheme } from '@aperture-ui/theme'
+import { SPACING, LAYOUT, ITheme, defaultTheme } from 'src/themes'
 
 export const baseNav = css({ display: 'flex', height: '100%' })
 

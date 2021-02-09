@@ -1,17 +1,18 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx } from '@emotion/react'
-import { defaultTheme } from '@aperture-ui/theme'
+import { ITheme } from '../../../themes'
 import { primary, secondary, tertiary } from './Buttons.styles'
 
 export type ButtonTypes = {
   label: string
   isDisabled: boolean
+  theme?: ITheme
 }
 
 export const PrimaryButton: React.FC<ButtonTypes> = (props) => {
-  const { label, isDisabled } = props
-  const theme = defaultTheme
+  const { label, isDisabled, theme } = props
+
   return (
     <button type="button" css={primary(theme, isDisabled)}>
       {label}
@@ -20,18 +21,20 @@ export const PrimaryButton: React.FC<ButtonTypes> = (props) => {
 }
 
 export const SecondaryButton: React.FC<ButtonTypes> = (props) => {
-  const { label } = props
+  const { label, theme } = props
+
   return (
-    <button type="button" css={secondary(defaultTheme)}>
+    <button type="button" css={secondary(theme)}>
       {label}
     </button>
   )
 }
 
 export const TertiaryButton: React.FC<ButtonTypes> = (props) => {
-  const { label } = props
+  const { label, theme } = props
+
   return (
-    <button type="button" css={tertiary(defaultTheme)}>
+    <button type="button" css={tertiary(theme)}>
       {label}
     </button>
   )

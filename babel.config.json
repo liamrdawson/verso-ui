@@ -1,0 +1,19 @@
+{
+  "presets": [
+    "@babel/preset-react",
+    ["@babel/preset-env", { "targets": { "node": "current" } }],
+    "@babel/preset-typescript"
+  ],
+  "plugins": [
+    [
+      "babel-plugin-module-resolver",
+      {
+        "root": ["./"],
+        "alias": {
+          "src/components": "./src/components",
+          "src/themes": "./src/themes"
+        }
+      }
+    ]
+  ]
+}

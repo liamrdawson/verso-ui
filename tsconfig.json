@@ -3,6 +3,7 @@
   "types": ["node", "@emotion/core"],
   "compilerOptions": {
     /*  https://www.typescriptlang.org/docs/handbook/compiler-options.html  */
+    "composite": true,                          //  This is so that we can reference this file from within our tests tsconfig.
     "jsxFactory": "jsx",
     "outDir": "dist",                           //  * Redirect output structure to the directory.
     "rootDir": "src",                           //  * Folder structure within outDir.
