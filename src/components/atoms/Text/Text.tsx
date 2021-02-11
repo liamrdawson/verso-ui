@@ -2,7 +2,7 @@
 /** @jsx jsx */
 import { jsx, SerializedStyles } from '@emotion/react'
 import { ElementType } from 'react'
-import { ITypeWeight, ITypeScale, ITheme, defaultTheme } from 'src/themes'
+import { ITypeWeight, ITypeScale, ITheme, defaultTheme } from '../../../themes'
 import { textStyles } from './Text.styles'
 
 export type TextProps = {

@@ -1,3 +1,5 @@
+/** @jsxRuntime classic */
+/** @jsx jsx */
 import { SerializedStyles } from '@emotion/react';
 export declare type FormTypes = {
     label: string;

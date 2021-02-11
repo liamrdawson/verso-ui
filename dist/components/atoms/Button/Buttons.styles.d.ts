@@ -1,5 +1,5 @@
 import { SerializedStyles } from '@emotion/react';
-import { ITheme } from 'src/themes';
+import { ITheme } from '../../../themes';
 export declare const base: SerializedStyles;
 export declare const primary: (theme: ITheme | undefined, isDisabled: boolean) => SerializedStyles;
 export declare const secondary: (theme?: ITheme) => SerializedStyles;

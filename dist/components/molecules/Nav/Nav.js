@@ -8,8 +8,8 @@ exports.Nav = void 0;
 /** @jsx jsx */
 const react_1 = require("@emotion/react");
 const link_1 = __importDefault(require("next/link"));
-const atoms_1 = require("src/components/atoms");
-const themes_1 = require("src/themes");
+const atoms_1 = require("../../atoms");
+const themes_1 = require("../../../themes");
 const Nav_styles_1 = require("./Nav.styles");
 const Nav = (props) => {
     const { pages } = props;

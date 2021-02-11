@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.headingStyles = exports.componentStyles = exports.base = void 0;
 const react_1 = require("@emotion/react");
-const themes_1 = require("src/themes");
+const themes_1 = require("../../../themes");
 const base = (theme = themes_1.defaultTheme) => react_1.css({
     fontFamily: theme.typography.primaryFont,
     color: theme.colour.primary,

@@ -4,7 +4,7 @@ exports.Text = void 0;
 /** @jsxRuntime classic */
 /** @jsx jsx */
 const react_1 = require("@emotion/react");
-const themes_1 = require("src/themes");
+const themes_1 = require("../../../themes");
 const Text_styles_1 = require("./Text.styles");
 const Text = ({ fontWeight, fontSize, element, css, additionalStyles, children, }) => {
     // const theme: ITheme = useTheme()

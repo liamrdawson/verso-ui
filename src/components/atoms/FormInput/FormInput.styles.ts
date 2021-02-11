@@ -5,7 +5,7 @@ import {
   SPACING,
   ITheme,
   defaultTheme,
-} from 'src/themes'
+} from '../../../themes'
 
 export const labelAndForm = (theme: ITheme = defaultTheme): SerializedStyles =>
   css({

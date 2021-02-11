@@ -1,5 +1,5 @@
 import { css, SerializedStyles } from '@emotion/react'
-import { ITheme, typeScale, SPACING, defaultTheme } from 'src/themes'
+import { ITheme, typeScale, SPACING, defaultTheme } from '../../../themes'
 
 export const base = css({
   boxSizing: 'border-box',

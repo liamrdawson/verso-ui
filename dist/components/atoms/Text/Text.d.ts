@@ -2,7 +2,7 @@
 /** @jsx jsx */
 import { SerializedStyles } from '@emotion/react';
 import { ElementType } from 'react';
-import { ITypeWeight, ITypeScale } from 'src/themes';
+import { ITypeWeight, ITypeScale } from '../../../themes';
 export declare type TextProps = {
     fontWeight: keyof ITypeWeight;
     fontSize: keyof ITypeScale;

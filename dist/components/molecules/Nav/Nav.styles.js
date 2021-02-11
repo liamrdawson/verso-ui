@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.dynamicStyle = exports.baseLink = exports.baseUl = exports.baseNav = void 0;
 const react_1 = require("@emotion/react");
-const themes_1 = require("src/themes");
+const themes_1 = require("../../../themes");
 exports.baseNav = react_1.css({ display: 'flex', height: '100%' });
 const baseUl = (theme = themes_1.defaultTheme) => react_1.css({
     listStyle: 'none',

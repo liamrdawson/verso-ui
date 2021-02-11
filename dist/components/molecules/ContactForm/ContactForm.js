@@ -4,7 +4,7 @@ exports.ContactForm = void 0;
 /** @jsxRuntime classic */
 /** @jsx jsx */
 const react_1 = require("@emotion/react");
-const atoms_1 = require("src/components/atoms");
+const atoms_1 = require("../../atoms");
 const ContactForm_styles_1 = require("./ContactForm.styles");
 //  TODO:
 //  Check if the form inputs are all entered with the correct data

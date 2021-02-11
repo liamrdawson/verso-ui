@@ -1,7 +1,7 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { ITheme, defaultTheme } from 'src/themes'
 import { jsx, SerializedStyles } from '@emotion/react'
+import { ITheme, defaultTheme } from '../../../themes'
 import { labelAndForm, labelStyle, input } from './FormInput.styles'
 
 export type FormTypes = {

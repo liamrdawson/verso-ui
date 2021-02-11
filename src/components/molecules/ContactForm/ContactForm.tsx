@@ -1,7 +1,7 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx } from '@emotion/react'
-import { TextInput, TextArea, PrimaryButton } from 'src/components/atoms'
+import { TextInput, TextArea, PrimaryButton } from '../../atoms'
 import {
   FormStyle,
   FormFirstNameStyle,

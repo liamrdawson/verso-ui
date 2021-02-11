@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.tertiary = exports.secondary = exports.primary = exports.base = void 0;
 const react_1 = require("@emotion/react");
-const themes_1 = require("src/themes");
+const themes_1 = require("../../../themes");
 exports.base = react_1.css({
     boxSizing: 'border-box',
     padding: `${themes_1.SPACING[5]}px ${themes_1.SPACING[6]}px`,

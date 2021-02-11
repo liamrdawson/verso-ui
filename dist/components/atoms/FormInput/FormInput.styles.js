@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.labelStyle = exports.input = exports.labelAndForm = void 0;
 const react_1 = require("@emotion/react");
-const themes_1 = require("src/themes");
+const themes_1 = require("../../../themes");
 const labelAndForm = (theme = themes_1.defaultTheme) => react_1.css({
     display: 'flex',
     flexDirection: 'column',

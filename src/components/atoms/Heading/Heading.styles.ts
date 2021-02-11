@@ -1,5 +1,5 @@
 import { css, CSSObject, SerializedStyles } from '@emotion/react'
-import { typeScale, defaultTheme, ITheme } from 'src/themes'
+import { typeScale, defaultTheme, ITheme } from '../../../themes'
 
 export const base = (theme: ITheme = defaultTheme): SerializedStyles =>
   css({

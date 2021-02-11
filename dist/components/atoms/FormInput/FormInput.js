@@ -3,8 +3,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.TextArea = exports.TextInput = void 0;
 /** @jsxRuntime classic */
 /** @jsx jsx */
-const themes_1 = require("src/themes");
 const react_1 = require("@emotion/react");
+const themes_1 = require("../../../themes");
 const FormInput_styles_1 = require("./FormInput.styles");
 const TextInput = ({ label, type, additionalStyles, }) => {
     const theme = themes_1.defaultTheme;

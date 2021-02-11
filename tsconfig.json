@@ -15,12 +15,7 @@
     "types": ["node", "@emotion/core"],         //  * List of names of type definitions to include: https://www.typescriptlang.org/tsconfig#types
     "jsx": "react",                             //  Support JSX in .tsx files
     // "allowJs": false,                        //  Allows JavaScript files to be compiled.
-    "baseUrl": ".",                             //  * Base directory to resolve non-relative module names: https://www.typescriptlang.org/docs/handbook/module-resolution.html#base-url
-    "paths": {
-      //  * List of path mapping entries for module names to locations relative to the baseUrl: https://www.typescriptlang.org/docs/handbook/module-resolution.html#path-mapping
-      "@aperture-ui/theme": ["./src/themes"],
-      "@aperture-ui/components": ["src/components"]
-    },
+    // "baseUrl": ".",                          //  DOES NOT CHANGE EMITTED CODE PATHS: https://github.com/microsoft/TypeScript/issues/10866
     // "lib": ["dom", "dom.iterable", "es5"],   //  List of library files to be included in the compilation.
     "esModuleInterop": true,                    //  todo: find a way to disable this to avoid forcing upstream changes. Treats commonjs modules as if they have default ESModule export.
     "skipLibCheck": false,                      //  ! Does not check declaration files.

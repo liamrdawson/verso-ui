@@ -1,5 +1,5 @@
 import { css, SerializedStyles } from '@emotion/react'
-import { SPACING, LAYOUT, ITheme, defaultTheme } from 'src/themes'
+import { SPACING, LAYOUT, ITheme, defaultTheme } from '../../../themes'
 
 export const baseNav = css({ display: 'flex', height: '100%' })
 
