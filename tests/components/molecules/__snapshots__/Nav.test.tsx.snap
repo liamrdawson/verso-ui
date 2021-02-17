@@ -8,30 +8,36 @@ exports[`Snapshot Test: Contact Form 1`] = `
     className="css-rk3qdn-Nav"
   >
     <li>
-      <span
+      <a
         className="css-r5wu0g"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
+        href="path/to/page/one"
       >
-        <a
-          className="css-8mhfhs-Text"
+        <span
+          className="css-r5wu0g"
         >
-          Page One
-        </a>
-      </span>
+          <a
+            className="css-8mhfhs-Text"
+          >
+            Page One
+          </a>
+        </span>
+      </a>
     </li>
     <li>
-      <span
+      <a
         className="css-r5wu0g"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
+        href="path/to/page/two"
       >
-        <a
-          className="css-8mhfhs-Text"
+        <span
+          className="css-r5wu0g"
         >
-          Page Two
-        </a>
-      </span>
+          <a
+            className="css-8mhfhs-Text"
+          >
+            Page Two
+          </a>
+        </span>
+      </a>
     </li>
   </ul>
 </nav>
