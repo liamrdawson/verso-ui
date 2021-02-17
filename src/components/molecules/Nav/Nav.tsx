@@ -1,7 +1,6 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx } from '@emotion/react'
-import Link from 'next/link'
 import { Text } from '../../atoms'
 import { ITheme, defaultTheme } from '../../../themes'
 import { baseNav, baseUl, baseLink, dynamicStyle } from './Nav.styles'
@@ -24,7 +23,7 @@ export const Nav: React.FC<NavProps> = (props) => {
       <ul css={baseUl(theme)}>
         {pages.map((page: PageObject) => (
           <li key={pages.indexOf(page)}>
-            <Link css={baseLink} href={page.pathName}>
+            <a css={baseLink} href={page.pathName}>
               <span css={baseLink}>
                 <Text
                   additionalStyles={dynamicStyle(defaultTheme)}
@@ -35,7 +34,7 @@ export const Nav: React.FC<NavProps> = (props) => {
                   {page.pageName}
                 </Text>
               </span>
-            </Link>
+            </a>
           </li>
         ))}
       </ul>
