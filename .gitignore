@@ -54,3 +54,6 @@ jspm_packages/
 .dist-types
 tsdoc-metadata.json
 temp
+
+# tsconfig build misc
+tsconfig.tsbuildinfo

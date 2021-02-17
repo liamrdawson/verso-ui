@@ -1,4 +1,4 @@
-//  *What is  this?
+//  * What is  this?
 //  I want to keep the tests and the code they're testing separate.
 //  Jest should be allowed for use in the tests ONLY & not in the src folder.
 //  ESLint however wants one tsconfig that includes all of the code to be linted.
