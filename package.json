@@ -23,8 +23,13 @@
   },
   "homepage": "https://github.com/liamrdawson/components#readme",
   "scripts": {
-    "build": "webpack",
     "tsbuild": "tsc",
+    "webpack": "webpack",
+    "prod": "npm run webpack -- --mode production",
+    "dev": "npm run webpack -- --mode development --watch",
+    "debug": "node --inspect --inspect-brk ./node_modules/webpack/bin/webpack.js",
+    "prod:debug": "npm run debug -- --mode production",
+    "dev:debug": "npm run debug -- --mode development",
     "test": "jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"

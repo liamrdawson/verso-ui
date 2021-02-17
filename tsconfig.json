@@ -5,7 +5,7 @@
     /*  https://www.typescriptlang.org/docs/handbook/compiler-options.html  */
     "composite": true,                          //  This is so that we can reference this file from within our tests tsconfig.
     "jsxFactory": "jsx",
-    "outDir": "tsDist",                           //  * Redirect output structure to the directory.
+    "outDir": "dist",                           //  * Redirect output structure to the directory.
     "rootDir": "src",                           //  * Folder structure within outDir.
     "declaration": true,                        //  * Generates corresponding .d.ts file.
     "strict": true,                             //  * Enable all strict type checking options.
