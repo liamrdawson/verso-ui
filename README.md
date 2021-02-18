@@ -1,23 +1,53 @@
-# UI Component Library
+# Verso UI
 
-A UI component library built with React, Typescript and Storybook.
+Verso UI is a library for creating themable user interfaces based on atomic design principles.
 
-The goals of this project are to:
+Built for image oriented websites and applications, where you can pass in custom tokens and themes to customize colours, typography, layout and styles. Built in TypeScript, Verso UI comes with its own type definitions and is intended to work in a variety of scalable applications and libraryies.
 
-- Build a reusable components library which can be used across projects.
-- Publish the component library to npm so that it can be used across projects.
-- Learn advanced TypeScript concepts and patterns.
-- Learn more about project architecture for scalable projects.
+## Get Started
 
-## Project Notes
-
-**`import * as React from 'react'`**
-When Typescript compiles the project, the compiler produces the following error where `import React from 'react';` is used:
-
-```zsh
-This module is declared with using 'export =', and can only be used with a default import when using the 'esModuleInterop' flag.
+```bash
+  npm i verso-ui
 ```
 
-`export = React;` is required as it essentially replaces the entire exports namespace with the right hand side, meaning all properties of the `React` namespace. It's what allows you to do both a namespace `import import * as React from 'react'` and destructured import `import { Component } from 'react'`.
+```jsx
+import { Text } from 'verso-ui'
 
-If you don't want to use `allowSyntheticDefaultImports` you can write an entire namespace import and then do `React.Component`.
+//  Verso UI will ask for custom values required to render successfully
+export default (props) => (
+  <Text></Text> //Type '{ children: string; }' is missing the following properties from type 'TextProps': fontWeight, fontSize, element
+)
+
+export default (props) => (
+  <Text fontWeight="light" fontSize="medium" element="p">
+    {props.children}
+  </Text>
+)
+```
+
+## Supported Components
+
+Here's a list of components currently available from Verso UI:
+
+<details>
+<summary>Atoms</summary>
+<br>
+<ul>
+  <li>PrimaryButton</li>
+  <li>SecondaryButton</li>
+  <li>TertiaryButton</li>
+  <li>TextInput</li>
+  <li>TextArea</li>
+  <li>Heading</li>
+  <li>Text</li>
+</ul>
+</details>
+
+<details>
+<summary>Molecules</summary>
+<br>
+<ul>
+  <li>ContactForm</li>
+  <li>Nav</li>
+</ul>
+</details>
