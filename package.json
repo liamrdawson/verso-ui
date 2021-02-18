@@ -1,5 +1,5 @@
 {
-  "name": "aperture-ui",
+  "name": "verso-ui",
   "version": "1.0.0",
   "description": "A component library based on the principles of atomic design.",
   "main": "dist/index.js",
