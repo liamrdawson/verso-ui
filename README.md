@@ -1,6 +1,6 @@
 # Verso UI
 
-Verso UI is a library for creating themable user interfaces based on atomic design principles.
+**Verso UI is a library for creating themable user interfaces based on atomic design principles.**
 
 Built for image oriented websites and applications, where you can pass in custom tokens and themes to customize colours, typography, layout and styles. Built in TypeScript, Verso UI comes with its own type definitions and is intended to work in a variety of scalable applications and libraryies.
 
