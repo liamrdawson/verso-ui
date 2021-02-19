@@ -1,6 +1,6 @@
 {
   "name": "verso-ui",
-  "version": "1.0.0",
+  "version": "1.0.0--semantic-release",
   "description": "A component library based on the principles of atomic design.",
   "main": "dist/index.js",
   "types": "./dist/index.d.ts",
@@ -45,8 +45,11 @@
     "@babel/preset-env": "^7.12.13",
     "@babel/preset-react": "^7.12.13",
     "@babel/preset-typescript": "^7.12.13",
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/commit-analyzer": "^8.0.1",
     "@semantic-release/github": "^7.2.0",
     "@semantic-release/npm": "^7.0.10",
+    "@semantic-release/release-notes-generator": "^9.0.1",
     "@storybook/addon-actions": "^6.1.15",
     "@storybook/addon-essentials": "^6.1.15",
     "@storybook/addon-links": "^6.1.15",
@@ -89,6 +92,20 @@
     ],
     "plugins": [
       "@semantic-release/github",
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      [
+        "@semantic-release/changelog",
+        {
+          "changelogFile": "docs/CHANGELOG.md"
+        }
+      ],
+      [
+        "@semantic-release/git",
+        {
+          "assets": ["docs/CHANGELOG.md"]
+        }
+      ],
       [
         "@semantic-release/npm",
         {
