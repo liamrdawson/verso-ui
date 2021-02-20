@@ -2,7 +2,7 @@
 
 Verso UI is a library for creating themable user interfaces based on atomic design principles.
 
-Built for image oriented websites and applications, where you can pass in custom tokens and themes to customize colours, typography, layout and styles. Built in TypeScript, Verso UI comes with its own type definitions and is intended to work in a variety of scalable applications and libraryies.
+Built for image oriented websites and applications, where you can pass in custom tokens and themes to customize colours, typography, layout and styles. Built in TypeScript, Verso UI comes with its own type definitions to work in a variety of scalable applications and libraries.
 
 ## Get Started
 
@@ -13,7 +13,7 @@ Built for image oriented websites and applications, where you can pass in custom
 ```jsx
 import { Text } from 'verso-ui'
 
-//  Verso UI will ask for custom values required to render successfully
+//  Verso UI will ask for custom values required to render
 export default (props) => (
   <Text></Text> //Type '{ children: string; }' is missing the following properties from type 'TextProps': fontWeight, fontSize, element
 )
@@ -27,7 +27,7 @@ export default (props) => (
 
 ## Supported Components
 
-Here's a list of components currently available from Verso UI:
+Here's a list of components available from Verso UI:
 
 <details>
 <summary>Atoms</summary>
