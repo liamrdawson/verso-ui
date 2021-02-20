@@ -1,6 +1,6 @@
 import { jsx } from '@emotion/react'
-import renderer from 'react-test-renderer'
-import { Nav } from 'src/components'
+import {render} from '@testing-library/react'
+import { Nav } from '../../../src'
 
 test('Snapshot Test: Contact Form', () => {
   const pagesArray = [
@@ -14,10 +14,9 @@ test('Snapshot Test: Contact Form', () => {
     },
   ]
 
-  const component = renderer.create(
+  const {container} = render(
     <Nav pages={pagesArray}>Heading Level One</Nav>,
   )
 
-  const tree = component.toJSON()
-  expect(tree).toMatchSnapshot()
+  expect(container).toMatchSnapshot()
 })

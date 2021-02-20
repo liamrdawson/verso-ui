@@ -1,35 +1,31 @@
 import { jsx } from '@emotion/react'
-import renderer from 'react-test-renderer'
-import { Heading } from 'src/components'
+import {render} from '@testing-library/react'
+import { Heading } from '../../../src'
 
 test('Snapshot Test: Heading Level One', () => {
-  const component = renderer.create(
+  const {container} = render(
     <Heading element="h1">Heading Level One</Heading>,
   )
-  const tree = component.toJSON()
-  expect(tree).toMatchSnapshot()
+  expect(container).toMatchSnapshot()
 })
 
 test('Snapshot Test: Heading Level Two', () => {
-  const component = renderer.create(
+  const {container} = render(
     <Heading element="h2">Heading Level One</Heading>,
   )
-  const tree = component.toJSON()
-  expect(tree).toMatchSnapshot()
+  expect(container).toMatchSnapshot()
 })
 
 test('Snapshot Test: Heading Level Three', () => {
-  const component = renderer.create(
+  const {container} = render(
     <Heading element="h3">Heading Level One</Heading>,
   )
-  const tree = component.toJSON()
-  expect(tree).toMatchSnapshot()
+  expect(container).toMatchSnapshot()
 })
 
 test('Snapshot Test: Heading Level Four', () => {
-  const component = renderer.create(
+  const {container} = render(
     <Heading element="h4">Heading Level One</Heading>,
   )
-  const tree = component.toJSON()
-  expect(tree).toMatchSnapshot()
+  expect(container).toMatchSnapshot()
 })

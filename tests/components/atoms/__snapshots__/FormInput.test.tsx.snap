@@ -1,38 +1,42 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Snapshot Test: TextArea 1`] = `
-<div
-  className="css-z21lfh-TextArea"
->
-  <label
-    className="css-1bawu2g-TextArea"
-    htmlFor="Secondary Button"
+<div>
+  <div
+    class="css-z21lfh-TextArea"
   >
-    Secondary Button
-  </label>
-  <textarea
-    className="css-1jf3zmb-TextArea"
-    id="Secondary Button"
-    name="Secondary Button"
-  />
+    <label
+      class="css-1bawu2g-TextArea"
+      for="Secondary Button"
+    >
+      Secondary Button
+    </label>
+    <textarea
+      class="css-1jf3zmb-TextArea"
+      id="Secondary Button"
+      name="Secondary Button"
+    />
+  </div>
 </div>
 `;
 
 exports[`Snapshot Test: TextInput 1`] = `
-<div
-  className="css-6r466p-TextInput"
->
-  <label
-    className="css-2x82w0-TextInput"
-    htmlFor="Text input label"
+<div>
+  <div
+    class="css-6r466p-TextInput"
   >
-    Text input label
-  </label>
-  <input
-    className="css-18ek46i-TextInput"
-    id="Text input label"
-    name="Text input label"
-    type="text"
-  />
+    <label
+      class="css-2x82w0-TextInput"
+      for="Text input label"
+    >
+      Text input label
+    </label>
+    <input
+      class="css-18ek46i-TextInput"
+      id="Text input label"
+      name="Text input label"
+      type="text"
+    />
+  </div>
 </div>
 `;

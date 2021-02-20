@@ -27,7 +27,7 @@ export const Nav: React.FC<NavProps> = (props) => {
               <span css={baseLink}>
                 <Text
                   additionalStyles={dynamicStyle(defaultTheme)}
-                  element="a"
+                  element="p"
                   fontWeight="light"
                   fontSize="medium"
                 >

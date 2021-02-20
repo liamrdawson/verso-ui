@@ -1,11 +1,10 @@
 import { jsx } from '@emotion/react'
-import renderer from 'react-test-renderer'
-import { ContactForm } from 'src/components'
+import {render} from '@testing-library/react'
+import { ContactForm } from '../../../src'
 
 test('Snapshot Test: Contact Form', () => {
-  const component = renderer.create(
+  const {container} = render(
     <ContactForm>Heading Level One</ContactForm>,
   )
-  const tree = component.toJSON()
-  expect(tree).toMatchSnapshot()
+  expect(container).toMatchSnapshot()
 })
