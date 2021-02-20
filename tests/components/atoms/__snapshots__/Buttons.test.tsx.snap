@@ -1,28 +1,34 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Snapshot Test: Primary Button 1`] = `
-<button
-  className="css-1195o8y-PrimaryButton"
-  type="button"
->
-  Primary Button
-</button>
+<div>
+  <button
+    class="css-1195o8y-PrimaryButton"
+    type="button"
+  >
+    Primary Button
+  </button>
+</div>
 `;
 
 exports[`Snapshot Test: Secondary Button 1`] = `
-<button
-  className="css-1ou42su-SecondaryButton"
-  type="button"
->
-  Secondary Button
-</button>
+<div>
+  <button
+    class="css-1ou42su-SecondaryButton"
+    type="button"
+  >
+    Secondary Button
+  </button>
+</div>
 `;
 
 exports[`Snapshot Test: Tertiary Button 1`] = `
-<button
-  className="css-11f3soy-TertiaryButton"
-  type="button"
->
-  Tertiary Button
-</button>
+<div>
+  <button
+    class="css-11f3soy-TertiaryButton"
+    type="button"
+  >
+    Tertiary Button
+  </button>
+</div>
 `;

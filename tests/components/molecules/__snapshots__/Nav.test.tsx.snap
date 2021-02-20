@@ -1,44 +1,46 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Snapshot Test: Contact Form 1`] = `
-<nav
-  className="css-23iqwz-Nav"
->
-  <ul
-    className="css-rk3qdn-Nav"
+<div>
+  <nav
+    class="css-23iqwz-Nav"
   >
-    <li>
-      <a
-        className="css-r5wu0g"
-        href="path/to/page/one"
-      >
-        <span
-          className="css-r5wu0g"
+    <ul
+      class="css-rk3qdn-Nav"
+    >
+      <li>
+        <a
+          class="css-r5wu0g"
+          href="path/to/page/one"
         >
-          <a
-            className="css-8mhfhs-Text"
+          <span
+            class="css-r5wu0g"
           >
-            Page One
-          </a>
-        </span>
-      </a>
-    </li>
-    <li>
-      <a
-        className="css-r5wu0g"
-        href="path/to/page/two"
-      >
-        <span
-          className="css-r5wu0g"
+            <p
+              class="css-8mhfhs-Text"
+            >
+              Page One
+            </p>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="css-r5wu0g"
+          href="path/to/page/two"
         >
-          <a
-            className="css-8mhfhs-Text"
+          <span
+            class="css-r5wu0g"
           >
-            Page Two
-          </a>
-        </span>
-      </a>
-    </li>
-  </ul>
-</nav>
+            <p
+              class="css-8mhfhs-Text"
+            >
+              Page Two
+            </p>
+          </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
 `;

@@ -1,24 +1,22 @@
 import { jsx } from '@emotion/react'
-import renderer from 'react-test-renderer'
+import {render} from '@testing-library/react'
 import { TextInput, TextArea } from '../../../src'
 
 test('Snapshot Test: TextInput', () => {
-  const component = renderer.create(
+  const {container} = render(
     <TextInput
       type="text"
       label="Text input label"
     />,
   )
-  const tree = component.toJSON()
-  expect(tree).toMatchSnapshot()
+  expect(container).toMatchSnapshot()
 })
 
 test('Snapshot Test: TextArea', () => {
-  const component = renderer.create(
+  const {container} = render(
     <TextArea
       label="Secondary Button"
     />,
   )
-  const tree = component.toJSON()
-  expect(tree).toMatchSnapshot()
-})
+  expect(container).toMatchSnapshot()
+  })
