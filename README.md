@@ -52,7 +52,19 @@ Here's a list of components available from Verso UI:
 </ul>
 </details>
 
+<h2 style="text-align: center">Jump To:</h3>
+<h3 style="text-align: center">Raise an Issue</h3>
+<h3 style="text-align: center">Run Locally</h3>
+
+## Raise an issue.
+
+### Defects / Bugs
+
+If you have been using Verso UI in one of your own projects and would like to draw attention to a bug or a defect, please select the projects **Bug / Defect** saved reply. Please provide as much detailed information as possible, including a description of the problem, reporduction steps and acceptance criteria for any future Pull Request related to this issue.
+
 ## Developing Verso UI Locally
+
+If you have been using Verso UI and there's a feature you would like to see in this library, please select the projects **Task / Epic** saved reply. Please provide as much detailed information as possible about what you would like to see. Please provide a description of the feature and its purpose and an acceptance criteria for any future Pull Request related to this request.
 
 ### Set up in isolation
 
@@ -63,7 +75,7 @@ To start your development environment for Verso UI, run:
 
 This will start of the project in webpacks development mode, where the local build is updates as you update the code. Storybook will also start up on `localhost:6006` so that you can work on the components in an isolated environment.
 
-### Set up within another application.
+### Set up within another application
 
 To get started with Verso UI and develop components in the context of a consuming application (as opposed to Storybooks isolated setup), run:
 
@@ -82,8 +94,6 @@ Verso UI requires a copy of React and React-Dom as devDependencies so that [Jest
 
 If you receive this error, it's because two version's of React are present. To fix this you need to make sure that Verso UI and the consuming project are both using the same version of React. You have a couple of options to get this working, depending on your projects setup.
 
-> ℹ️ [See React's official docs on this problem for more information.](https://reactjs.org/warnings/invalid-hook-call-warning.html)
-
 - Resolve your module aliases with Webpack in your consuming application by adding the following to your webpack config:
   ```js
     //  In webpack.config.js
@@ -95,3 +105,5 @@ If you receive this error, it's because two version's of React are present. To f
       },
   ```
 - Link your local running Verso UI library to your consumers version of react by running `npm link path/to/consumer/node_modules/react`.
+
+> ℹ️ [See React's official docs on this problem for more information.](https://reactjs.org/warnings/invalid-hook-call-warning.html)
