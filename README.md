@@ -52,11 +52,15 @@ Here's a list of components available from Verso UI:
 </ul>
 </details>
 
-<h2 style="text-align: center">Jump To:</h3>
-<h3 style="text-align: center">Raise an Issue</h3>
-<h3 style="text-align: center">Run Locally</h3>
+## Jump To:
 
-## Raise an issue.
+**[Raise an Issue / Request a Feature](#-Raise-an-issue-/-request-a-feature)**
+
+**[Run Locally](#-Run-Locally)**
+
+### Run Locally
+
+## Raise an Issue / Request a Feature
 
 ### Defects / Bugs
 
