@@ -4,6 +4,14 @@ Verso UI is a library for creating themable user interfaces based on atomic desi
 
 Built for image oriented websites and applications, where you can pass in custom tokens and themes to customize colours, typography, layout and styles. Built in TypeScript, Verso UI comes with its own type definitions to work in a variety of scalable applications and libraries.
 
+## Jump To:
+
+**[Get Started](#-Get-Started)**
+
+**[Raise an Issue / Request a Feature](#-Raise-an-issue-/-request-a-feature)**
+
+**[Run Locally](#-Developing-Verso-UI-Locally)**
+
 ## Get Started
 
 ```bash
@@ -51,14 +59,6 @@ Here's a list of components available from Verso UI:
   <li>Nav</li>
 </ul>
 </details>
-
-## Jump To:
-
-**[Raise an Issue / Request a Feature](#-Raise-an-issue-/-request-a-feature)**
-
-**[Run Locally](#-Run-Locally)**
-
-### Run Locally
 
 ## Raise an Issue / Request a Feature
 
