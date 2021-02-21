@@ -25,7 +25,7 @@ export default (props) => (
 )
 ```
 
-## Supported Components
+### Supported Components
 
 Here's a list of components available from Verso UI:
 
@@ -51,3 +51,47 @@ Here's a list of components available from Verso UI:
   <li>Nav</li>
 </ul>
 </details>
+
+## Developing Verso UI Locally
+
+### Set up in isolation
+
+To start your development environment for Verso UI, run:
+
+1. npm run dev
+2. npm run storybook
+
+This will start of the project in webpacks development mode, where the local build is updates as you update the code. Storybook will also start up on `localhost:6006` so that you can work on the components in an isolated environment.
+
+### Set up within another application.
+
+To get started with Verso UI and develop components in the context of a consuming application (as opposed to Storybooks isolated setup), run:
+
+**/Verso-UI**
+
+- `npm link`
+- `npm run dev`
+
+**/consumingApp**
+
+- `npm link verso-ui`
+
+Verso UI requires a copy of React and React-Dom as devDependencies so that [Jest](https://jestjs.io/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) can run locally and also within the projects CI pipeline as Pull Requests occur and also so that React components can render.
+
+#### Invalid Hook Call Warning
+
+If you receive this error, it's because two version's of React are present. To fix this you need to make sure that Verso UI and the consuming project are both using the same version of React. You have a couple of options to get this working, depending on your projects setup.
+
+> ℹ️ [See React's official docs on this problem for more information.](https://reactjs.org/warnings/invalid-hook-call-warning.html)
+
+- Resolve your module aliases with Webpack in your consuming application by adding the following to your webpack config:
+  ```js
+    //  In webpack.config.js
+      resolve: {
+        alias: {
+          react: path.resolve('node_modules/react'),
+          'react-dom': path.resolve('node_modules/react'),
+        },
+      },
+  ```
+- Link your local running Verso UI library to your consumers version of react by running `npm link path/to/consumer/node_modules/react`.
